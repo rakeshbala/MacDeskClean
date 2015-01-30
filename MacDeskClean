@@ -21,9 +21,9 @@ tell application "Finder"
 	
 	
 	--create root folder and sub folder structure if not exists
-	set rootFolder to folder rootFolderName of folder "Desktop" of home
 	if not (exists folder rootFolderName of folder "Desktop" of home) then
 		make new folder at folder "Desktop" of home with properties {name:rootFolderName}
+		set rootFolder to folder rootFolderName of folder "Desktop" of home
 		make new folder at rootFolder with properties {name:"Images"}
 		make new folder at rootFolder with properties {name:"Audio"}
 		make new folder at rootFolder with properties {name:"Videos"}
@@ -31,7 +31,8 @@ tell application "Finder"
 		make new folder at rootFolder with properties {name:"Code and data"}
 		make new folder at rootFolder with properties {name:"Compressed"}
 		make new folder at rootFolder with properties {name:"Others"}
-		
+	else
+		set rootFolder to folder rootFolderName of folder "Desktop" of home
 	end if
 	
 	
