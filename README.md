@@ -5,7 +5,9 @@ Cleans up the desk and moves the cluttered files on desk to a folder on desktop.
 
 
 Instructions:
-Download, open and save as application. On running the script all files on Desktop will be moved to a folder on Desktop:
+Download, open with apple script editor and save as application. On running the script all files on Desktop will be moved to a folder on Desktop:
+
+This is a work in progress. Expect more flexibility later.
 
 Folder structure created and file types included:
 
@@ -21,3 +23,4 @@ Folder structure created and file types included:
 For eg: Desk_Bkup_9/18/2013
 All files will be moved to this folder no matter how many times the script is run during a day.
 When date changes a new folder with new name will be created.
+
